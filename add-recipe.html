@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+<style>
+body{
+margin:0;
+font-family:'Georgia', serif;
+}
+header{
+background-color:#F5F5DC;
+padding: 20px;
+text-align: center;
+border-bottom: 3px solid rgb(12, 83, 34);
+color: rgb(12, 83, 34);
+}
+nav{
+display: flex;
+justify-content: center;
+padding: 10px 0;
+}
+nav a{
+color: rgb(12, 83, 34);
+margin:0 15px ;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+nav a:hover {
+      color: #7FFF00;
+    }
+    form{
+display: flex;
+flex-direction: column;
+gap: 20px;
+    }
+    label{
+font-weight: bold;
+    }
+    input, textarea, select{
+background-color: #F5F5DC;
+padding: 12px;
+border-radius: 4px;
+font-family: inherit;
+    }
+    textarea{
+        resize: vertical;
+        min-height: 50px;
+    }
+    button{
+        padding: 12px;
+        border: none;
+        font-weight: bold;
+        font-size: 1em;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+
+</head>
+<body>
+    <!--header-->
+<header> <h1 style="text-align: center;">Add Your Recipe To This Table</h1>
+    <h3 style="text-align: center;"> You can share hare the taste of the new food you discoverd</h3>
+</header>
+<!--end of header-->
+<!--navbar-->
+    <nav>
+    <b><a  href="index.html">| Home |</a></b> 
+    <b><a  href="add-recipe.html">| Add Recipe |</a></b> 
+    <b><a  href="recipe-list.html">| Recipe List |</a></b>
+    </nav>
+    <!--end of nanbar-->
+    <!--main-->
+    <main>
+<h1 style="margin: 1%;">New Food Registrtion</h1>
+<form action="metod">
+
+<label style="margin: 1%;" for="Name">Name Recipe</label><br><br>
+<input  style="margin: 1%;" type="text" id="Name"  name="Name" value="" placeholder="e.g. Onigiri, Dumpling" required>
+<br>
+  <label style="margin: 1%;" for="ingredients">Food Ingredients</label>
+            <textarea style="margin: 1%;" id="ingredients" name="ingredients" placeholder="e.g. Three Spoons Of Salt,3 Eggs..." required></textarea>
+<br>
+  <label style="margin: 1%;" for="instructions">Steps To Prepare It?</label>
+            <textarea style="margin: 1%;" id="instructions" name="instructions" placeholder="e.g. mix dry ingredients, backe for 30 minutes..." required></textarea>
+<br>
+    <label style="margin: 1%;" for="image">Link to an image that shows your dish (optional)</label>
+          <input style="margin: 1%;" type="url" id="image" name="image" placeholder="provide a link to an image of your dish (optional)">
+  <br>
+    <label style="margin: 1%;" for="E">Recipe Category</label><br><br>
+  <select style="margin: 1%;" name="Category" id="E" required>
+<option value="">Choose...</option>
+<option value="Desserts">Desserts</option>
+<option value="Appetizers">Appetizers</option>
+<option value="Snacks">Snacks</option>
+<option value="Drinks">Drinks</option>
+<option value="Vegetarian">Vegetarian(Vagen)</option>
+  </select>
+  <br>
+<br><input style="margin: 1%;" type="submit">
+</form>
+    </main>
+     <!--end of main-->
+    <br>
+    <br>
+   <!--footer-->
+       <footer style="text-align:center; padding: 10px; background-color: #F5F5DC; color:rgb(12, 83, 34);">
+    @2025 The Dinner Table Detective. Made By Ayat Vattar
+        </footer>
+    <!--end of footer-->
+</body>
+</html>

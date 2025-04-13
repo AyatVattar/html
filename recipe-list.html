@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipe</title>
+
+    <style>
+body{
+    margin:0;
+font-family:'Georgia', serif;
+}
+header{
+    background-color:#F5F5DC;
+padding: 20px;
+text-align: center;
+border-bottom: 3px solid rgb(12, 83, 34);
+color: rgb(12, 83, 34);
+}
+nav{
+    display: flex;
+justify-content: center;
+padding: 10px 0;
+}
+nav a{
+    color: rgb(12, 83, 34);
+margin:0 15px ;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+nav a:hover {
+      color: #7FFF00;
+    }
+    h1{
+        color: rgb(12, 83, 34);
+        text-align: center;
+    }
+    select{
+        background-color: #F5F5DC;
+padding: 7px;
+border-radius: 3px;
+font-family: inherit;
+    }
+    button{
+        background-color: #F5F5DC;
+padding: 12px;
+border-radius: 4px;
+font-family: inherit;
+color: rgb(12, 83, 34);
+border-bottom: 3px solid rgb(12, 83, 34);
+    }
+    </style>
+
+</head>
+<body>
+ <!--header-->
+    <header><h1 style="text-align: center;">Explore Food</h1>
+        <p style="text-align: center;">Become A Food Detective By Exploring Food</p>
+    </header>
+     <!--end of header-->
+      <!--navder-->
+    <nav>
+        <b><a  href="index.html">| Home |</a></b> 
+    <b><a  href="add-recipe.html">| Add Recipe |</a></b> 
+    <b><a  href="recipe-list.html">| Recipe List |</a></b>
+    </nav>
+     <!--end of nader-->
+     <!--main-->
+     <main>
+<h1>Dining Table</h1>
+
+<label style="margin: 1%;" for="F">Filter Recipe By Categories</label>
+<select name="Category" id="F">
+    <option value="">All</option>
+    <option value="Desserts">Desserts</option>
+    <option value="Appetizers">Appetizers</option>
+    <option value="Snacks">Snacks</option>
+    <option value="Drinks">Drinks</option>
+    <option value="Vegetarian">Vegetarian(Vagen)</option>
+</select>
+<br>
+<br>
+<h2 style="margin: 1%;">Dumpling</h2>
+<img style="margin: 1%;" src="images/pic (3).JPG" alt="Pic Of Dumpling" width="400" height="500">
+ <p style="margin-left: 1%;">A broad food group includes pieces of dough that are wrapped around intermediate Ingredients. <br>
+The dough can be bread, flour or potato based and filled with meat, fish, cheese, vegetables, fruits or sweets.
+</p>
+ <br>
+ <a style="margin: 1%;" href="recipe-detail.html"><button>View the full Recipe</button></a>
+
+<h2 style="margin: 1%;">Dango</h2>
+<img style="margin:1%;" src="images/pic (5).jpg" alt="Pic Of Dango" width="400" height="400">
+<p style="margin-left: 1%;">
+It is one of the types of wagashi(Japanese sweets). <br>
+Which is made from rice flour.
+</p>
+<a style="margin: 1%;" href="recipe-detail.html"><button>View the full Recipe</button></a>
+<br>
+    <br>
+</main>
+ <!--end of main-->
+    <!--footer-->
+        <footer style="text-align:center; padding: 10px; background-color: #F5F5DC; color:rgb(12, 83, 34);">
+        @2025 The Dinner Table Detective. Made By Ayat Vattar
+            </footer>
+        <!--end of footer-->
+</body>
+</html>
